@@ -23,7 +23,7 @@ const Chart = ({ range }) => {
   return (
     <div className="chart-wrapper">
       <LineChart
-        margin={{ top: 30, bottom: 30 }}
+        margin={{ top: 30, bottom: 35, right: 5 }}
         width={1200}
         height={500}
         data={rangeObj}
