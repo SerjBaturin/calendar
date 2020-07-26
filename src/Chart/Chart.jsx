@@ -22,16 +22,29 @@ const Chart = ({ range }) => {
 
   return (
     <div className="chart-wrapper">
-      <LineChart width={1200} height={400} data={rangeObj}>
+      <LineChart
+        margin={{ top: 30, bottom: 30 }}
+        width={1200}
+        height={500}
+        data={rangeObj}
+      >
         <XAxis
+          angle={-45}
           dataKey="dates"
-          tickMargin={15}
+          tickMargin={10}
           tick={{ fontSize: 10 }}
+          textAnchor="end"
         />
         <YAxis dataKey="money" tickMargin={15} tick={{ fontSize: 10 }} />
-        <Tooltip />
+        <Tooltip wrapperStyle={{ boxShadow: "2px 2px 5px gray" }} />
         <CartesianGrid stroke="" />
-        <Line type="basis" dataKey="money" stroke="#ef7501" yAxisId={0} />
+        <Line
+          type="basis"
+          dataKey="money"
+          stroke="#ef7501"
+          yAxisId={0}
+          layout="horizontal"
+        />
       </LineChart>
     </div>
   );
