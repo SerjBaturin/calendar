@@ -1,0 +1,13 @@
+.chart-wrapper {
+  display: flex;
+  align-self: center;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 98.5%;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 0.5;
+}

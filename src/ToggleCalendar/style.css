@@ -1,0 +1,11 @@
+.toggle-calendar {
+  margin-left: auto;
+  cursor: pointer;
+}
+.toggle-calendar__icon {
+  width: 15px;
+}
+.toggle-calendar .fa-calendar{
+  margin-right: 10px;
+  color: rgb(136, 136, 136);
+}
